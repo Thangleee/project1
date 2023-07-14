@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <!-- CSS Implementing Plugins -->
+   <link  rel="stylesheet" href="lab-html/assets/vendor/animate.css">
+   <link  rel="stylesheet" href="lab-html/assets/vendor/custombox/custombox.min.css">
+    
+  
+</head>
+
+<body>
+  <a class="btn u-btn-primary" href="#modal12" data-modal-target="#modal12" data-modal-effect="letmein">Launch Modal
+  </a>
+  
+  <!-- Demo modal window -->
+  <div id="modal12" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+    <button type="button" class="close" onclick="Custombox.modal.close();">
+      <i class="hs-icon hs-icon-close"></i>
+    </button>
+    <h4 class="g-mb-20">Modal title</h4>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book.</p>
+    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+      recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </div>
+  <!-- JS Implementing Plugins -->
+  <script  src="lab-html/assets/vendor/custombox/custombox.min.js"></script>
+
+  <!-- JS Unify -->
+  <script  src="lab-html/assets/js/components/hs.modal-window.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script >
+    $(document).on('ready', function () {
+      // initialization of popups
+      $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+    });
+  </script>
+</body>
+
+</html>
